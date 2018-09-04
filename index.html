@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="./public/main.css" type="text/css">
+</head>
+<body>
+	<div class="hamburger-icon" onclick="showNav()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<nav class="nav-bar-mobile">
+		<ul style="list-style: none; margin: 0;">
+			<li class="nav-link-mobile"><a onclick="showNav()" href="#features">Features</a></li>
+			<li class="nav-link-mobile"><a onclick="showNav()" href="#how-it-works">How it works</a></li>
+			<li class="nav-link-mobile"><a onclick="showNav()" href="#prices">Prices</a></li>
+		</ul>
+	</nav>
+	<header id="header">
+		<img id="header-img" href="#" src="./public/icons/synthesizer.svg" alt="logo">
+		<a href="#"><p id="title-logo">Roland</p></a>
+		<nav id="nav-bar">
+			<ul style="list-style: none; margin: 0;">
+				<li><a class="nav-link" href="#features">Features</a></li>
+				<li><a class="nav-link" href="#how-it-works">How it works</a></li>
+				<li><a class="nav-link" href="#prices">Prices</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="hero">
+		<h1 id="title">Bring music to life</h1>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<input id="email" type="email" name="email" placeholder="Enter your email address" required>
+			<input id="submit" type="submit" >
+		</form>
+	</section>
+	<main id="main">
+		<section id="features">
+			<h2 class="hr-heading" id="features-heading"><span>Features</span></h2>
+			<div class="grid">
+				<div id="icons">
+					<div class="features-info">
+						<img src="./public/icons/headphones.svg" alt="icon" class="icon">
+						<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sit repudiandae temporibus.</p>
+					</div>
+					<div class="features-info">
+						<img src="./public/icons/computer.svg" alt="icon" class="icon">
+						<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sit repudiandae temporibus.</p>
+					</div>
+					<div class="features-info">
+						<img src="./public/icons/mixer.svg" alt="icon" class="icon">
+						<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sit repudiandae temporibus.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="how-it-works">
+			<h2 class="hr-heading" id="how-it-works-heading"><span>How It Works</span></h2>
+			<div id="video-container">
+				<iframe id="video" width="400px" height="250px" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+				src="https://www.youtube.com/embed/3sXdYXYI_ZI">
+			</iframe>
+			</div>
+		</section>
+		<section id="prices">
+			<h2 class="hr-heading" id="pricing-heading"><span>Pricing</span></h2>
+			<div class="grid">
+				<div id="price-boxes">
+					<div class="box">
+						<h3 class="box-title">Roland D-50</h3>
+						<ul style="list-style: none;">
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						</ul>
+						<button class="buy-now">Buy Now</button>
+					</div>
+					<div class="box">
+						<h3 class="box-title">Roland RS-70</h3>
+						<ul style="list-style: none;">
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						</ul>
+						<button class="buy-now">Buy Now</button>
+					</div>
+					<div class="box">
+						<h3 class="box-title">Roland XV-88</h3>
+						<ul style="list-style: none;">
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="box-features">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						</ul>
+						<button class="buy-now">Buy Now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="footer">
+		<div id="credits">Icons made by <a href="https://www.flaticon.com/authors/dale-humphries" title="Dale Humphries">Dale Humphries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</footer>
+</body>
+<script>
+	const hamburger = document.querySelector('.hamburger-icon');
+	const mobileNav = document.querySelector('.nav-bar-mobile');
+
+	const showNav = () => {
+		hamburger.classList.toggle('open');
+		mobileNav.classList.toggle('visible');
+	};
+</script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
